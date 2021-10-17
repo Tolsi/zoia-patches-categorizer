@@ -1,7 +1,6 @@
 import glob, os, json
 import shutil
 
-
 def find_latest_version(patch_folder, id):
     path = patch_folder + '/' + id + '.json'
     if not os.path.exists(path):
@@ -22,7 +21,7 @@ group_by_field = "categories"
 # comment, view, like, download
 sort_by_field = "like" + "_count"
 categories = {}
-for patch_folder in glob.iglob('~/Library/Application Support/.ZoiaLibraryApp/*', recursive=False):
+for patch_folder in glob.iglob(os.path.expanduser('~/Library/Application Support/.ZoiaLibraryApp/*'), recursive=False):
     if not os.path.isfile(patch_folder):  # filter dirs
         id = os.path.basename(patch_folder)
         if id.isnumeric():
