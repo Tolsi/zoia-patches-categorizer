@@ -1,5 +1,7 @@
 import glob, os, json
 import shutil
+from datetime import datetime
+
 
 def find_latest_version(patch_folder, id):
     path = patch_folder + '/' + id + '.json'
@@ -42,7 +44,7 @@ for patch_folder in glob.iglob(os.path.expanduser('~/Library/Application Support
 
 for category in categories:
     list = categories[category]
-    sorted_list = sorted(list, key=lambda elem: -elem[0])
+    sorted_list = sorted(list, key=lambda elem:(elem[0], datetime.fromisoformat(elem[1]['created_at'])), reverse = True)
 
     for i, t in enumerate(sorted_list):
         folder = str(int(i / 64))
