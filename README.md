@@ -9,7 +9,7 @@ lot of folders with patches categories/tags, sort them by likes/downloads, crop 
 them to the ZOIA SD card. Note that patches can have many categories/tags and are duplicated in each folder, so they can
 take up more space.
 
-It is quite primitive and should works only on Mac OS X with ZOIA Librarian installed, but if there is a need from
+It is quite primitive and should works only on Mac OS X with ZOIA Librarian installed for now, but if there is a need from
 others, it can get development.
 
 ## How to use it
