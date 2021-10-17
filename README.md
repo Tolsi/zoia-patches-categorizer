@@ -11,3 +11,9 @@ take up more space.
 
 It is quite primitive and should works only on Mac OS X with ZOIA Librarian installed, but if there is a need from
 others, it can get development.
+
+## How to use it
+
+1. Install the [ZOIA Librarian app](https://github.com/meanmedianmoge/zoia_lib) and download all interested patches in it
+2. Open the script and set the settings for export, at least `group_by_field` and `sort_by_field`
+3. Run it! Enjoy
