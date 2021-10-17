@@ -16,7 +16,7 @@ others, it can get development.
 
 1. Install the [ZOIA Librarian app](https://github.com/meanmedianmoge/zoia_lib) and download all interested patches in it
 2. Open the script and set the settings for export, at least `group_by_field` and `sort_by_field`
-3. Run it!
+3. Run it! Just `python3 zoia_categorizer.py`
 4. Copy the created folders to ZOIA SD Card
 5. Load some folder from [ZOIA Config tab (Patches from SD card)](https://youtu.be/lJmJuKlYQxw?t=212)
 6. Enjoy!
